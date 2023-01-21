@@ -1,7 +1,12 @@
-function test2() {
+import React from "react";
+
+function test2(props) {
+    
     return (
         <div>
-            Test2
+            Sana: {props.date.toISOString()};
+            <h2>Sabab: {props.title}</h2>
+            <p>Narx: ${props.amount}</p>
         </div>
     )
 }
